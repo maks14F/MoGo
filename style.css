@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
 :root {
     --header-text-color:#95E1D3;
     --title-text-color:#333333;
     --text-color:#B6B6B6;
     --rectagle-color:#F38181;
     --button-text-color:#FFFFFF;
+
+    --body-font:'Montserrat',sans-serif;
+    --text-font:'Roboto',sans-serif;
+    --minor-text:'Kaushan Script',sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
 }
