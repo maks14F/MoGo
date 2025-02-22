@@ -18,3 +18,21 @@
 body {
     font-family: var(--body-font);
 }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.work-subtitle {
+    padding-top: 68px;
+}
+
+
+.team-subtitle {
+    padding-top: 100px;
+}
+
+.team-item {
+    padding-bottom: 80px;
+}
