@@ -36,3 +36,38 @@ body {
 .team-item {
     padding-bottom: 80px;
 }
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.team-img {
+    width: 380px;
+    height: 470px;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
