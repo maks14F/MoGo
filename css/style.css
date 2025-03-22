@@ -3,8 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 
+/* font-weight
+100: Thin (Hairline)
+200: Extra Light (Ultra Light)
+300: Light
+400: Normal (Regular)
+500: Medium
+600: Semi Bold (Demi Bold)
+700: Bold
+800: Extra Bold (Ultra Bold)
+900: Black (Heavy) */
+
+
+
 :root {
     --header-text-color:#95E1D3;
+    --button-background-color:#95E1D3;
     --title-text-color:#333333;
     --text-color:#B6B6B6;
     --rectagle-color:#F38181;
@@ -24,17 +38,29 @@ body {
     margin: 0 auto;
 }
 
-.work-subtitle {
-    padding-top: 68px;
+.header {
+    padding-top:32px;
+    padding-bottom:68px;
+    font-family: var(--body-font);
 }
 
-
-.team-subtitle {
-    padding-top: 100px;
+.work {
+    padding-bottom:100px;
 }
 
-.team-item {
-    padding-bottom: 80px;
+.team {
+    padding-bottom:80px;
+}
+
+.footer {
+    padding-bottom:10px;
+}
+
+.header-logo {
+    color: var(--header-text-color);
+    font-size:30px;
+    font-weight:bold;
+    text-decoration: none;
 }
 
 header .container {
@@ -42,18 +68,123 @@ header .container {
     justify-content: space-between;
 }
 
+.header-link {
+    color: var(--header-text-color);
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.header-link:hover {
+    color: var(--rectagle-color);
+    border-bottom: 3px solid var(--rectagle-color);
+}
+
 .header-list {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 55px;
+    font-size: 14px;
+    font-weight:400;
 }
+
+
+
+.work-title {
+    text-align: center;
+    font-size: 30px;
+    font-family:var(--body-font);
+    font-weight: bold;
+    color: var(--title-text-color);
+    padding-top: 20px;
+    padding-bottom: 109px;
+}
+
+.work-subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-family:var(--minor-text);
+    color: var(--title-text-color);
+}
+
+.work-item {
+    height: 74px;
+    width: 330px;
+}
+
+.work-article {
+    display: flex;
+    font-family: var(--text-font);
+}
+
+.work-desc {
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.work-image {
+    width: 37px;
+    height: 37px;
+    margin-right: 20px;
+}
+
+.work-caption {
+    padding-bottom: 20px;
+    color: var(--title-text-color);
+    font-size: 15px;
+}
+
 
 .work-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
 }
 
+
+.team {
+    text-align: center;
+}
+
+.team-title {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: var(--body-font);
+    color: var(--title-text-color);
+    padding-top: 17px;
+    padding-bottom: 85px;
+}
+
+.team-subtitle {
+    font-size: 24px;
+    font-family: var(--minor-text);
+    color: var(--title-text-color);
+}
+
+.team-desc {
+    font-size: 15px;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    padding-bottom: 27px;
+}
+
+.team-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--title-text-color);
+    font-family: var(--body-font);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.team-job {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-weight: lighter;
+    font-size: 15px;
+    font-style: italic;
+}
 
 .team-img {
     width: 380px;
@@ -66,8 +197,49 @@ header .container {
     gap: 30px;
 }
 
+.footer-desc {
+    font-size: 14px;
+    font-family: var(--body-font);
+    align-items: last baseline;
+}
+
+.footer-link {
+    color: var(--rectagle-color);
+    text-decoration: none;
+}
+
+.footer-form {
+    display: flex;
+    gap: 0;
+}
+
+.footer-input {
+    font-style: italic;
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: 300;
+    padding-top:12px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+    border:1px solid var(--text-color);
+    border-right: none;
+}
+
+.footer-button {
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 14px;
+    background-color:var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 13px 38px;
+}
+
 footer div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    border-top:1px solid var(--text-color);
+    padding-top: 10px;
 }
