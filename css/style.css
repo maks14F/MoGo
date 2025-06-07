@@ -90,6 +90,8 @@ header .container {
 
 
 
+
+
 .work-title {
     text-align: center;
     font-size: 30px;
@@ -97,7 +99,18 @@ header .container {
     font-weight: bold;
     color: var(--title-text-color);
     padding-top: 20px;
-    padding-bottom: 109px;
+    padding-bottom: 65px;
+
+}
+
+.work-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--rectagle-color);
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .work-subtitle {
@@ -122,12 +135,6 @@ header .container {
     color: var(--text-color);
 }
 
-.work-image {
-    width: 37px;
-    height: 37px;
-    margin-right: 20px;
-}
-
 .work-caption {
     padding-bottom: 20px;
     color: var(--title-text-color);
@@ -142,12 +149,14 @@ header .container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
+    column-gap: 100px;
+    row-gap: 70px;
 }
 .work-icon {
-    width: 70px;
-    height: 70px;
+    width:37px;
+    height: 37px;
     padding-right: 20px;
+    flex-shrink:0; 
 }
 
 
@@ -161,7 +170,17 @@ header .container {
     font-family: var(--body-font);
     color: var(--title-text-color);
     padding-top: 17px;
-    padding-bottom: 85px;
+    padding-bottom: 45px;
+}
+
+.team-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--rectagle-color);
+    display: block;
+    margin: 0 auto;
+    margin-top: 36px;
 }
 
 .team-subtitle {
