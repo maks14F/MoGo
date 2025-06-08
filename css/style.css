@@ -41,6 +41,7 @@ body {
 .header {
     padding-top:17px;
     font-family: var(--body-font);
+    padding-bottom: 13px;
 }
 
 .work {
@@ -89,9 +90,6 @@ header .container {
 }
 
 
-
-
-
 .work-title {
     text-align: center;
     font-size: 30px;
@@ -121,8 +119,7 @@ header .container {
 }
 
 .work-item {
-    height: 74px;
-    width: 330px;
+    flex-basis: calc((100% - 200px) / 3);
 }
 
 .work-article {
@@ -149,8 +146,8 @@ header .container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 100px;
-    row-gap: 70px;
+    column-gap: 70px;
+    row-gap: 100px;
 }
 .work-icon {
     width:37px;
@@ -262,7 +259,7 @@ header .container {
     padding: 13px 38px;
 }
 
-footer div {
+.footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
