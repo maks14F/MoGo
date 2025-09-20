@@ -101,28 +101,6 @@ header .container {
 
 }
 
-.team-item {
-    position: relative;
-}
-
-
-.team-item .team-overlay {
-    position: absolute;
-    width: 380px;
-    height: 470px;
-    background: linear-gradient(to bottom,#EF8B8A,#E5CF82);
-    opacity: 0;
-    right: 10px;
-    top: -10px;
-    transition: all 0.5s ease;
-}
-
-.team-item:hover .team-overlay {
-    opacity: 0.8;
-}
-
-
-
 .work-title::after {
     content: "";
     width: 60px;
@@ -174,13 +152,34 @@ header .container {
 .work-icon {
     width:37px;
     height: 37px;
-    padding-right: 20px;
+    margin-right: 20px;
     flex-shrink:0; 
 }
 
 
 .team {
     text-align: center;
+}
+
+
+.team-item {
+    position: relative;
+}
+
+
+.team-item .team-overlay {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(to bottom, #EF8B8A, #E5CF82);
+    opacity: 0;
+    right: 10px;
+    top: -10px;
+    transition: all 0.5s ease;
+}
+
+.team-item:hover .team-overlay {
+    opacity: 0.8;
 }
 
 .team-title {
