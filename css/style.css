@@ -19,6 +19,7 @@
 :root {
     --header-text-color:#95E1D3;
     --button-background-color:#95E1D3;
+    --icon-color:#95E1D3;
     --title-text-color:#333333;
     --text-color:#B6B6B6;
     --rectagle-color:#F38181;
@@ -148,7 +149,8 @@ header .container {
     width:37px;
     height: 37px;
     margin-right: 20px;
-    flex-shrink:0; 
+    flex-shrink:0;
+    fill: var(--icon-color);
 }
 
 
