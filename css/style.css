@@ -31,6 +31,7 @@
 
 body {
     font-family: var(--body-font);
+    font-size: 14px;
 }
 
 .container {
@@ -40,7 +41,6 @@ body {
 
 .header {
     padding-top:17px;
-    font-family: var(--body-font);
     padding-bottom: 13px;
 }
 
@@ -85,7 +85,6 @@ header .container {
     display: flex;
     flex-direction: row;
     gap: 55px;
-    font-size: 14px;
     font-weight:400;
 }
 
@@ -93,7 +92,6 @@ header .container {
 .work-title {
     text-align: center;
     font-size: 30px;
-    font-family:var(--body-font);
     font-weight: bold;
     color: var(--title-text-color);
     padding-top: 20px;
@@ -124,22 +122,19 @@ header .container {
 
 .work-article {
     display: flex;
-    font-family: var(--text-font);
 }
 
 .work-desc {
     font-size: 15px;
     color: var(--text-color);
+    font-family: var(--text-font);
 }
 
 .work-caption {
     padding-bottom: 20px;
     color: var(--title-text-color);
-    font-size: 14px;
-    font-family: var(--body-font);
     font-variant: small-caps;
 }
-
 
 .work-list {
     display: flex;
@@ -185,7 +180,6 @@ header .container {
 .team-title {
     font-weight: bold;
     font-size: 30px;
-    font-family: var(--body-font);
     color: var(--title-text-color);
     padding-top: 17px;
     padding-bottom: 45px;
@@ -216,9 +210,7 @@ header .container {
 
 .team-name {
     text-transform: uppercase;
-    font-size: 14px;
     color: var(--title-text-color);
-    font-family: var(--body-font);
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -243,8 +235,6 @@ header .container {
 }
 
 .footer-desc {
-    font-size: 14px;
-    font-family: var(--body-font);
     align-items: last baseline;
 }
 
@@ -261,11 +251,11 @@ header .container {
 .footer-input {
     font-style: italic;
     font-family: var(--text-font);
-    font-size: 14px;
     font-weight: 300;
     padding-top:12px;
-    padding-bottom: 11px;
+    padding-bottom: 12px;
     padding-left: 10px;
+    padding-right: 10px;
     border:1px solid var(--text-color);
     border-right: none;
 }
@@ -273,11 +263,10 @@ header .container {
 .footer-button {
     font-family: var(--body-font);
     font-weight: bold;
-    font-size: 14px;
     background-color:var(--button-background-color);
     color: var(--button-text-color);
     border: none;
-    padding: 13px 38px;
+    padding: 12px 38px;
 }
 
 .footer-container {
